@@ -1,8 +1,11 @@
 # 开发流程
+
 ```mermaid
 flowchart TD
-    CUI[Native自定义UI组件]
-    CLogic(Native自定义逻辑)
+    subgraph 自定义
+        CUI[Native自定义UI组件]
+        CLogic(Native自定义逻辑)
+    end
     Dev(开发应用)
     Bundle(编译生成react native项目)
     subgraph 编译生成Apk
@@ -18,8 +21,12 @@ flowchart TD
     编译生成Apk-->Test(fas:fa-vial Test)
 ```
 
-# [自定义UI组件](/custom/ui/)
+# [自定义 UI 组件](/custom/ui/)
+
 # 自定义逻辑组件
+
 # 开发应用
+
 # 构建
+
 - [打包](/build/bundle/)
