@@ -27,6 +27,21 @@
       }
     }
   </script>
+  <p>i am in mendix</p>
+  <button onclick="scan()">scan bar code</button>
+  <script>
+    debugger
+    addEventListener('message', event => {
+      if (event.data.format) {
+        alert(" 扫码结果\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " +
+          result.cancelled);
+      }
+    });
+    function scan() {
+      debugger
+      console.log('scan btn clicked', window.parent);
+      window.parent.postMessage('scan', '*');
+    } </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
